@@ -174,6 +174,8 @@ except:
     print("Erro.")
 
 '''
+
+'''
 pedido = ("Pizza", 2, 59.90, True)
 
 print(type(pedido))
@@ -181,3 +183,9 @@ print(type(pedido[0]))
 print(type(pedido[1]))
 print(type(pedido[2]))
 print(type(pedido[3]))
+'''
+
+# 1. Declare as Tuplas acima
+t1 = ('Arroz', 'Feijão', 'Batata')
+t2 = (0, 6, 4, 2, 8, 6, 4)
+t3 = (1, 3, 3, 5, 3, 5, 7)
