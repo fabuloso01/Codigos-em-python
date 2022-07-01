@@ -198,3 +198,12 @@ tamanhoT2 = len(t2)
 print(tamanhoT1)
 print(tamanhoT2)
 '''
+# 3. Imprima as tuplas ordenadas: t1 e t2 e depois reimprima-as
+t1 = ('Arroz', 'Feijão', 'Batata')
+t2 = (0, 6, 4, 2, 8, 6, 4)
+
+print(t1)
+print(sorted(t1))
+print("-" * 30)
+print(t2)
+print(sorted(t2))
