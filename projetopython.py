@@ -190,9 +190,11 @@ t1 = ('Arroz', 'Feijão', 'Batata')
 t2 = (0, 6, 4, 2, 8, 6, 4)
 t3 = (1, 3, 3, 5, 3, 5, 7)
 '''
+'''
 # 2. Calcule o tamanho das tuplas: t1 e t2
 tamanhoT1 = len(t1)
 tamanhoT2 = len(t2)
 
 print(tamanhoT1)
 print(tamanhoT2)
+'''
