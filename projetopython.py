@@ -159,7 +159,7 @@ while True:
         print("Você não digitou um número válido")
 print("Fim!")
 '''
-
+'''
 
 while True:
     try:
@@ -173,4 +173,11 @@ print("Soma: ", soma)
 except:
     print("Erro.")
 
+'''
+pedido = ("Pizza", 2, 59.90, True)
 
+print(type(pedido))
+print(type(pedido[0]))
+print(type(pedido[1]))
+print(type(pedido[2]))
+print(type(pedido[3]))
