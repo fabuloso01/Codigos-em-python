@@ -214,3 +214,16 @@ print(sorted(t2))
 t3 = (1, 3, 3, 5, 3, 5, 7)
 print(t3.count(3))
 '''
+# Exemplo 1 - Declarando a lista
+l1 = [2, 6, 4, 5, 7]
+print(l1)
+# Substituindo os valores
+l1[2] = 3
+print(l1)
+
+l1[0:2] = [0,1]
+print(l1)
+
+
+
+
