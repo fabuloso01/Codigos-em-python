@@ -214,6 +214,8 @@ print(sorted(t2))
 t3 = (1, 3, 3, 5, 3, 5, 7)
 print(t3.count(3))
 '''
+
+'''
 # Exemplo 1 - Declarando a lista
 l1 = [2, 6, 4, 5, 7]
 print(l1)
@@ -223,7 +225,191 @@ print(l1)
 
 l1[0:2] = [0,1]
 print(l1)
+'''
+'''
+Dada as listas e tuplas abaixo:
+preco = (10.9, 5.40, 8.30, 3.40)
+qtdComprada = [0, 3, 2, 4]
+Calcule e mostre para o usuário o valor total da compra dele sendo que
+o valor total será a soma da multiplicação do preço do produto pela quantidade comprada.
+'''
 
 
+'''
+preco = (10.9, 5.40, 8.30, 3.40)
+qtdComprada = [0, 3, 2, 4]
+
+preco = (10.9, 5.40, 8.30, 3.40)
+lista = sum(preco)
+print(f" O valor total do preço da compra é R$ {lista:.2f}")
 
 
+qtdComprada = [0, 3, 2, 4]
+lista = sum(qtdComprada)
+print(f" O valor total do quantidade de compra é R$ {lista:.2f}")
+
+total = somar*lista
+
+print(f" O valor total da compra é R$ {total:.2f}")
+'''
+'''
+#Exercício 1 - Declarando dicionário
+cardapio = {"X-Tudo" : 10.9,
+            "Batata" : 5.5,
+            "Refri" : 3.9}
+# 1. Mostrando cardápio:
+print("=" * 35)
+print(" " * 12, "CARDÁPIO")
+print("=" * 35)
+for lanche, valor in cardapio.items():
+  print(f"{lanche:.<25} R${valor:.2f}")
+print("=" * 35)
+
+# 2. Pergunta e Calcula:
+qtd = {}
+subTotal = {}
+total = 0
+
+for chave, valor in cardapio.items():
+  qtd[chave] = int(input(f"Quantos {chave} você quer? "))
+  subTotal[chave] = cardapio[chave] * qtd[chave]
+  total += subTotal[chave]
+#print(qtd)
+#print(subTotal)
+#print(f"{total:.2f}")
+
+# 3. Recibo
+print("=" * 35)
+print(" " * 12, "RECIBO")
+print("=" * 35)
+for chave, valor in qtd.items():
+  print(f"[{qtd[chave]}] R${chave:.<22} {subTotal[chave]:.2f}")
+print(f"TOTAL A PAGAR:............. R${total:.2f}")
+print("=" * 35)
+
+'''
+'''
+#Exemplo 1 - Lista:
+
+#Dicionário equivalente.
+
+lista = ['Fulano', 40, 'Minas Gerais']
+dicio = {'nome': 'Fulano', 
+        'idade': 40, 
+       'cidade': 'Minas Gerais'}
+print(lista)
+print(dicio)
+print(dicio.values())
+print(dicio.keys())
+'''
+'''
+#Exemplo 2 - Declarando dicionários
+
+# Imprimindo
+dic1 = {}
+dic2 = dict()
+dic3 = {
+      'key1' : 'value1',
+      'key2' : 'value2',
+      'key3' : 'value3'
+     }
+
+print(dic1)
+print(dic2)
+print(dic3)
+'''
+'''
+#Exemplo 3 - Declarando dicionário:
+
+# Acessando os valores:
+
+pessoa = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+print(dicio.values())
+'''
+'''
+#Exemplo 3 - Declarando dicionário:
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+# Acessando os valores:
+print(pessoas)
+print(pessoas['nome'])
+print(pessoas['idade'])
+print(pessoas['cidade'])
+'''
+
+'''
+#Exemplo 4 - Modificando o valor:
+
+# Imprimindo valores:
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+
+pessoas["cidade"] = 'São Paulo'
+
+print(pessoas)
+'''
+'''
+#Exemplo 5 - Criando uma chave:
+
+# Imprimindo valores:
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+pessoas["peso"] = 65
+
+print(pessoas)
+'''
+'''
+#Exemplo 6 - Criando uma chave:
+ 
+# Imprimindo valores:
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+
+pessoas["Cidade"] = 'São Paulo'
+
+print(pessoas)
+'''
+'''
+#Exemplo 7 - Deletando uma chave:
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+
+pessoas["cidade"] = 'São Paulo'
+del pessoas["cidade"] 
+
+print(pessoas)
+'''
+'''
+#Exemplo 8 - Imprimindo valores
+dicio = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+print(dicio)          #dicionário completo
+print(dicio.values())  #somente os valores do dicionário
+print(dicio.keys())   #somente as chaves do dicionário
+print(dicio.items())
+'''
+'''
+#Exemplo 9 - Imprimindo valores
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+for valor in pessoa.values():
+  print(valor)
+
+'''
+'''
+#Exemplo 10 - Imprimindo chaves
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+for valor in pessoa.keys():
+  print(valor)
+'''
