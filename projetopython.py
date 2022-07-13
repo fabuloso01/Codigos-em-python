@@ -413,3 +413,13 @@ pessoas = {"nome"  : "Fulano",
 for valor in pessoa.keys():
   print(valor)
 '''
+'''
+#Exemplo 11 - Imprimindo chaves e valores
+pessoas = {"nome"  : "Fulano",
+          "idade" :  40, 
+          "cidade": "Minas Gerais"}
+
+for chave, valor in pessoas.items():
+  print(chave, valor)
+'''
+
