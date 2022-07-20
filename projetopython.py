@@ -464,6 +464,23 @@ mes = date.today().month
 ano = date.today().year
 print(f"{dia}/{mes}/{ano}")
 '''
+'''
+# Hora agora
+agora = datetime.datetime.now()
+print(agora)
 
+agoraBR = agora.strftime("%d/%m/%Y %H:%M:%S")
+print(agoraBR)
 
+'''
+#Exemplo 01
+dia = 1
+mes = 5
+ano = 1994
+
+dataNasc = datetime.date(ano, mes, dia)
+dias = date.today() - dataNasc
+print(dias)
+idade = int(dias.days / 365)
+print(idade)
 
