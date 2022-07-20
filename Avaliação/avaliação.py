@@ -13,7 +13,7 @@ print(raiz(49))
 */
 
 '''
-
+'''
 # Area de um circulo
 from math import pi
 
@@ -22,3 +22,4 @@ raio = 4
 area = pi * (raio * raio)
 
 print(area)
+'''
